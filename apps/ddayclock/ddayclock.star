@@ -78,7 +78,7 @@ def main(config):
                         children = [
                             r.WrappedText(
                                 content = "{} {} Until 12:00".format(number, unit[0:1]),
-                                width = 31,
+                                width = 32,
                                 font = "tb-8",
                             ),
                         ],
@@ -113,6 +113,7 @@ def get_data(url):
     #I couldn't get the BSoup functions to properly process the html, so I used manual divides.
     #This will need to be checked the next time the DDay clock is updated to ensure it works.
     #However, the non-JS version of the website seems fairly consistent in its updates.
+    #This happens around January of every year.
     time = h.get(url).body().split("<h1>")[1].split("</h1>")[0].split(" - ")[1]
     number = int(time.split(" ")[0])
     unit = time.split(" ")[1]
