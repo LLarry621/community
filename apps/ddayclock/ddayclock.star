@@ -1,7 +1,7 @@
 """
 Applet: DDayClock
 Summary: Displays the current time of the Doomsday Clock
-Description: Gets the current Doomsday Clock data from https://www.doomsdayclock.net/
+Description: Gets the current Doomsday Clock data from https://www.doomsdayclock.net/ daily.
 Author: LLarry
 """
 
